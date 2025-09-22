@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Your Shopping Cart</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html" class="active">Shopping Cart</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div id="cart-container"></div>
+</main>
+
+<footer>
+    <p>&copy; 2025 ProSport Hub – Sports Equipment & Apparel Store. All rights reserved.</p>
+</footer>
+
+<script>
+    function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const container = document.getElementById('cart-container');
+        container.innerHTML = '';
+
+        if (cart.length === 0) {
+            container.innerHTML = '<p>Your cart is empty.</p>';
+            return;
+        }
+
+        const table = document.createElement('table');
+        table.innerHTML = `
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        `;
+
+        let totalPrice = 0;
+
+        cart.forEach((item, index) => {
+            // If quantity doesn't exist, default to 1
+            if (!item.qty) item.qty = 1;
+            // Handle price as string (e.g., '700 - R1500') or number
+            let priceValue = 0;
+            if (typeof item.price === 'string' && item.price.includes('-')) {
+                // Use the lower bound for total calculation
+                let match = item.price.match(/\d+/);
+                priceValue = match ? parseInt(match[0]) : 0;
+            } else {
+                priceValue = parseInt(item.price) || 0;
+            }
+            const itemTotal = priceValue * item.qty;
+            totalPrice += itemTotal;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><img src="${item.img}" alt="${item.name}"></td>
+                <td>${item.name}</td>
+                <td>R${item.price}</td>
+                <td>
+                    <input type="number" min="1" value="${item.qty}" onchange="updateQty(${index}, this.value)">
+                </td>
+                <td>R${itemTotal}</td>
+                <td><button onclick="removeItem(${index})">Remove</button></td>
+            `;
+            table.appendChild(row);
+        });
+
+        container.appendChild(table);
+
+        const totalDiv = document.createElement('div');
+        totalDiv.className = 'total';
+    totalDiv.textContent = 'Total: R' + totalPrice;
+        container.appendChild(totalDiv);
+    }
+
+    function updateQty(index, qty) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart[index].qty = parseInt(qty);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    function removeItem(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    loadCart();
+</script>
+</body>
+</html>
