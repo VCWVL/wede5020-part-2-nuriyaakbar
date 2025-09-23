@@ -59,6 +59,17 @@ Open any of the .html files (e.g., index.html) in your web browser to view the p
 -Proposal
 -Planning
 
+
+CHANGELOG:
+
+- The colours (theme) have changed to bolder and brighter colours.
+- The hovering description is now gone and the description of the product only shows when you view it.
+- The "shopping cart" page is now functioning properly.
+- Added a new text for new products at the bottom.
+- Added a text box for the user the leave their email address to be the first to see upcoming products and get exclusive offers and deals.
+- Updated each page (about.html , contact.html etc) to look more appealing to users.
+
+
 Reference list:
 
 - Module Manual
@@ -67,3 +78,6 @@ Reference list:
 - AI (Gemini,Copilot)
 - Sport Store website - Sportsmans Warehouse
 https://www.sportsmanswarehouse.co.za
+
+
+
