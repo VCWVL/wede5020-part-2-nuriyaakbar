@@ -2,6 +2,8 @@
 
 ProSport Hub – Sports Equipment & Apparel Store Website
 
+NURIYA AKBAR - ST10471841
+
 1. Project Overview
 This project is the development of a responsive e-commerce website for ProSport Hub, a South African retailer of sports equipment, footwear, and apparel.The goal is to create a modern, user-friendly online store that enhances product discovery, simplifies the shopping experience, and increases online sales.
 
