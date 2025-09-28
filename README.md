@@ -77,13 +77,14 @@ CHANGELOG:
 - Updated each page (about.html , contact.html etc) to look more appealing to users.
 - Added a "checkout" button on the shopping cart page,which then takes you to the "payment.html" page,where the customer can review their order and complete a SIMULATED checkout.
 - Updated the KPI's and added a refined budget breakdown in proposal 1.
+- Added intext references and Harvard style references at the end of the proposal.
 
 Reference list:
 
 - Module Manual
 - POE Brief
 - Proposal that I created
-- AI (Gemini,Copilot)
+- AI (Gemini,Copilot) - https://gemini.google.com/app & Copilot on VS Code.
 - Sport Store website - Sportsmans Warehouse
 https://www.sportsmanswarehouse.co.za
 
