@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout & Payment</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="payment-container" style="max-width:400px;margin:2em auto;padding:2em;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+            <h2>Order Summary</h2>
+            <div id="order-summary"></div>
+            <h2 style="margin-top:2em;">Payment Details</h2>
+            <form id="payment-form">
+                <label for="name">Name on Card:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="card">Card Number:</label><br>
+                <input type="text" id="card" name="card" maxlength="16" required><br><br>
+                <label for="exp">Expiry Date:</label><br>
+                <input type="text" id="exp" name="exp" placeholder="MM/YY" required><br><br>
+                <label for="cvc">CVC:</label><br>
+                <input type="text" id="cvc" name="cvc" maxlength="4" required><br><br>
+                <button type="submit" style="background:#ff512f;color:white;padding:0.7em 2em;border:none;border-radius:5px;font-size:1em;cursor:pointer;">Pay Now</button>
+            </form>
+            <div id="payment-message" style="margin-top:1em;color:green;font-weight:bold;"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 ProSport Hub – Sports Equipment & Apparel Store. All rights reserved.</p>
+    </footer>
+    <script>
+        // Display order summary from cart
+        const summaryDiv = document.getElementById('order-summary');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let total = 0;
+        if (cart.length === 0) {
+            summaryDiv.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            let html = '<ul style="padding-left:1em;">';
+            cart.forEach(item => {
+                let priceValue = 0;
+                if (typeof item.price === 'string' && item.price.includes('-')) {
+                    let match = item.price.match(/\d+/);
+                    priceValue = match ? parseInt(match[0]) : 0;
+                } else {
+                    priceValue = parseInt(item.price) || 0;
+                }
+                let itemTotal = priceValue * (item.qty || 1);
+                total += itemTotal;
+                html += `<li>${item.name} x ${item.qty || 1} — R${itemTotal}</li>`;
+            });
+            html += `</ul><p style='font-weight:bold;'>Total: R${total}</p>`;
+            summaryDiv.innerHTML = html;
+        }
+        // Fake payment form
+        document.getElementById('payment-form').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('payment-message').textContent = 'Payment successful! Thank you for your order.';
+            localStorage.removeItem('cart');
+        };
+    </script>
+</body>
+</html>
