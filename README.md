@@ -63,7 +63,8 @@ Open any of the .html files (e.g., index.html) in your web browser to view the p
 -Planning
 
 
-CHANGELOG:
+CHANGELOG: 
+(All changes made in Part 2)
 
 - The colours (theme) have changed to bolder and brighter colours.
 - Added better and higher quality images.
