@@ -113,6 +113,22 @@ Reference list:
 https://www.sportsmanswarehouse.co.za
 - Google chrome Dev Tools for the different devices and screen sizes.
 
+For the proposal:
+
+Chaffey, D. and Ellis-Chadwick, F., 2019. Digital marketing. 7th ed. Harlow: Pearson Education.
+
+Kotler, P., Keller, K.L., Brady, M., Goodman, M. and Hansen, T., 2019. Marketing management. 4th European ed. Harlow: Pearson.
+
+Laudon, K.C. and Traver, C.G., 2022. E-commerce 2022: business, technology, society. 17th ed. Harlow: Pearson.
+
+Marr, B., 2015. Key performance indicators (KPIs): the 75 measures every manager needs to know. Harlow: Pearson Education.
+
+Wix.com, 2023. The ultimate guide to eCommerce KPIs. [online] Available at: https://www.wix.com/blog/ecommerce-kpis
+ [Accessed 28 September 2025].
+
+Shopify, 2023. How to budget for an eCommerce website. [online] Available at: https://www.shopify.com/blog/ecommerce-budget
+ [Accessed 28 September 2025].
+
 
 
 
