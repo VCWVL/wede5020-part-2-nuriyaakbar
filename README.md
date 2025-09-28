@@ -79,6 +79,30 @@ CHANGELOG:
 - Updated the KPI's and added a refined budget breakdown in proposal 1.
 - Added intext references and Harvard style references at the end of the proposal.
 
+
+SCREENSHOTS OF MY WEBSITE ON DIFFERENT DEVICES AND SCREEN SIZES
+
+IPHONE 12 PRO:
+<img width="1170" height="2532" alt="screenshotiphone12pro" src="https://github.com/user-attachments/assets/1bbc5510-b200-47e9-8543-fc3c1aaaa7b8" />
+
+SAMSUNG GALAXY S20 ULTRA:
+<img width="1442" height="3202" alt="screenshotsamsungs20ultra" src="https://github.com/user-attachments/assets/0b2ce764-5a1f-47fb-82cc-1138336206b5" />
+
+ASUS ZENBOOK FOLD:
+<img width="1280" height="1920" alt="screenshotasuszenbookfold" src="https://github.com/user-attachments/assets/8072d178-5a6c-47aa-9039-5747268692f5" />
+
+IPAD AIR:
+<img width="1434" height="2063" alt="ssipadair" src="https://github.com/user-attachments/assets/b6faaf3c-8312-4a52-8ad3-2477988e329d" />
+<img width="1640" height="2360" alt="screenshotipadair" src="https://github.com/user-attachments/assets/d695eec0-f963-4cb4-8f07-4e5c2ffe372b" />
+
+SURFACE DUO:
+<img width="1075" height="1433" alt="screenshotsurfaceduo" src="https://github.com/user-attachments/assets/4d252943-299d-4d7e-ad2e-506daae87725" />
+
+NEST HUB MAX:
+<img width="2560" height="1600" alt="screenshotnesthubmax" src="https://github.com/user-attachments/assets/264e2c05-79a1-4c47-a50a-b9288b75c7a7" />
+
+
+
 Reference list:
 
 - Module Manual
@@ -87,6 +111,8 @@ Reference list:
 - AI (Gemini,Copilot) - https://gemini.google.com/app & Copilot on VS Code.
 - Sport Store website - Sportsmans Warehouse
 https://www.sportsmanswarehouse.co.za
+- Google chrome Dev Tools for the different devices and screen sizes.
+
 
 
 
