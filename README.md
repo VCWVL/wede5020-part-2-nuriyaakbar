@@ -76,7 +76,7 @@ CHANGELOG:
 - Added a text box at the end of the "Products" page for the user the leave their email address to be the first to see upcoming products and get exclusive offers and deals.
 - Updated each page (about.html , contact.html etc) to look more appealing to users.
 - Added a "checkout" button on the shopping cart page,which then takes you to the "payment.html" page,where the customer can review their order and complete a SIMULATED checkout.
-
+- Updated the KPI's and added a refined budget breakdown in proposal 1.
 
 Reference list:
 
