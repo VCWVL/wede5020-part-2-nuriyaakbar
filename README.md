@@ -41,6 +41,7 @@ contact.html
 enquiry.html
 cart.html
 view-product.html 
+payment.html
 
 
 This project also consists of a style.css page,which is linked to all other pages/files.
@@ -65,11 +66,15 @@ Open any of the .html files (e.g., index.html) in your web browser to view the p
 CHANGELOG:
 
 - The colours (theme) have changed to bolder and brighter colours.
+- Added better and higher quality images.
+- Changed some products and added some products and their descriptions.
+- Changed the prices from Dollars to Rands.
 - The hovering description is now gone and the description of the product only shows when you view it.
 - The "shopping cart" page is now functioning properly.
 - Added a new text for new products at the bottom.
-- Added a text box for the user the leave their email address to be the first to see upcoming products and get exclusive offers and deals.
+- Added a text box at the end of the "Products" page for the user the leave their email address to be the first to see upcoming products and get exclusive offers and deals.
 - Updated each page (about.html , contact.html etc) to look more appealing to users.
+- Added a "checkout" button on the shopping cart page,which then takes you to the "payment.html" page,where the customer can review their order and complete a SIMULATED checkout.
 
 
 Reference list:
